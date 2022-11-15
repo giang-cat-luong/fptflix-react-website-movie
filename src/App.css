@@ -82,13 +82,9 @@ h3 {
 } 
 
 /* Pagination */
-.pagination1 {
-  text-align: center;
-}
-
 .pagination {
   padding-bottom: 10px;
-  display: inline-block;
+  text-align: center;
 }
 
 .pagination a {
