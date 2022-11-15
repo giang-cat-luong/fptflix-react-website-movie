@@ -124,6 +124,7 @@ function Navigation() {
             <Link style={{ color: theme.color ,paddingRight:'20px',textDecoration:'none'}} to='/news'><Icon left>newspaper</Icon>News</Link>
             <Link style={{ color: theme.color ,paddingRight:'20px',textDecoration:'none'}} to='/about'><Icon left>info</Icon>About us</Link>
             <Link style={{ color: theme.color ,paddingRight:'20px',textDecoration:'none'}} to='/add'><Icon left>contacts</Icon>Add</Link>
+            <Link style={{ color: theme.color ,paddingRight:'20px',textDecoration:'none'}} to='/contact'><Icon left>contacts</Icon>Contact</Link>
           </Box>
           <Box sx={{ flexGrow: 0 }}>
             {user?.displayName ? (

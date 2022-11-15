@@ -1,8 +1,9 @@
 
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useContext } from 'react'
 import { ThemeContext } from './ThemeContext';
 import { Link } from 'react-router-dom'
+import ReactPaginate from "react-paginate";
 import { Icon, CardTitle, Row, Col, Card, Container, Section } from 'react-materialize'
 export default function FilmsPresentation() {
   const { theme, toggle, dark } = useContext(ThemeContext)
@@ -46,17 +47,7 @@ export default function FilmsPresentation() {
                 <Link to={`detail/${data.id}`}>Detail</Link>
               </Card></Col>))}
         </Row>
-        <div className='pagination1'>
-          <div className="pagination">
-            <Link to='/seeall' style={{ textDecoration: "none" }}>&laquo;</Link>
-            
-            <Link to='/' style={{ textDecoration: "none" }}>1</Link>
-            <Link to='/page2' style={{ textDecoration: "none" }}>2</Link>   
-            <Link to='/page3' style={{ textDecoration: "none" }}>3</Link>
-
-            <Link to='/seeall' style={{ textDecoration: "none" }}>&raquo;</Link>
-          </div>
-        </div>
+        
       </Container>
     </Section>
   )
